@@ -5,6 +5,7 @@ create a collage with my instagram photos last year
 
 ```
 $ sudo easy_install python-instagram
+$ python get_access_token.py
 $ python meta.py user_id access_token
 $ mkdir -p images/thumbnails
 $ sh download.sh meta.txt thumbnails
