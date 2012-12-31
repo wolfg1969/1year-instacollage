@@ -6,10 +6,10 @@ import os
 import Image
 
 
-def collage(infiles, tile_width, tile_height, outfile):
+def collage(infiles, tile_width, tile_height, outfile, cols):
     
     tile_count = len(infiles)
-    cols = 8
+    cols = cols
     rows = tile_count // cols + (1 if tile_count % cols else 0)
     padding = 5
     gap = 0
@@ -39,5 +39,6 @@ if __name__ == '__main__':
 
     infiles = glob.glob(os.path.join(sys.argv[1], '*.jpg'))
     outfile = sys.argv[2]
+    cols = sys.argv[3]
     
-    collage(infiles, 150, 150, outfile)
+    collage(infiles, 150, 150, outfile, int(cols))
