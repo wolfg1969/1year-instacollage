@@ -11,5 +11,5 @@ $ mkdir -p images/thumbnails
 $ sh download.sh meta.txt thumbnails
 $ mkdir images/2012
 $ brew install pil
-$ python collage.py images/2012 images/collage2012.jpg
+$ python collage.py images/2012 images/collage2012.jpg 8
 ```
