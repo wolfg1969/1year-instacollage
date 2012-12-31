@@ -30,10 +30,6 @@ def download_image_url(access_token, userid, count):
 	f.close()	
 			
 	
-def usage(status):
-	print 'meta.py -u instagram_userid -t access_token -c count'	
-	sys.exit(status)
-	
 if __name__ == '__main__':
 
 	userid = sys.argv[1]
