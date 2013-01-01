@@ -15,4 +15,6 @@ $ python collage.py images/2012 images/collage2012.jpg 8
 
 $ awk -F\[  '{print $2;}' meta.txt | tr \] ' ' | sed  -e 's/User: //g' | sed -e 's/, / /g' > likes.txt
 $  scripts/scald.rb --local Count.scala --input likes.txt --output likes.tsv
+
+$ tail -10 filter.tsv | sort -k 2,2 -n | tail -r
 ```
